@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Dashboard Project</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 class="main-title">Welcome to My JavaScript API Dashboard!</h1>
+  <div class="grid-container">
+    <section class="grid-item" id="dog-api">
+       <h2>🐶 Random Dog</h2>
+      <button id="dog-button">Get Dog</button>
+      <div class="output" id="dog-output"></div>
+    </section>
+
+    <section class="grid-item" id="cat-api">
+      <h2>🐱 Random Cat</h2>
+      <button id="cat-button">Get Cat</button>
+      <div class="output" id="cat-output"></div>
+    </section>
+
+    <section class="grid-item" id="weather-api">
+      <h2>☀️ Weather Info</h2>
+      <div class="info">
+        <input type="text" id="city-input" placeholder="Enter city name" spellcheck="false"/>
+        <button id="weather-button">Get Weather</button>
+      </div>
+      <div class="output" id="weather-output"></div>
+    </section>
+
+    <section class="grid-item" id="currency-api">
+      <h2>💱 Currency Rates</h2>
+      <div class="info">
+        <input type="text" id="currency-input" placeholder="Enter amount in USD" />
+        <button id="currency-button">Convert</button>
+      </div>
+      <input type="hidden" id="from-currency" value="usd" />
+      <label for="to-currency">To:</label>
+      <select id="to-currency">
+        <option value="aud">AUD Australian Dollar</option>
+        <option value="cad">CAD Canadian Dollar</option>
+        <option value="chf">CHF Swiss Franc</option>
+        <option value="cnh">CNH Chinese Yuan</option>
+        <option value="eur">EUR Euro Dollar</option>
+        <option value="gbp">GBP British Pound</option>
+        <option value="hkd">HKD Hong Kong Dollar</option>
+        <option value="jpy">JPY Japanese Yen</option>
+        <option value="nzd">NZD New Zealand Dollar</option>
+      </select>
+      <div class="output" id="currency-output"></div>
+    </section>
+
+    <section class="grid-item" id="bible-api">
+      <h2>📚 Bible API</h2>
+      <div class="bible-info">
+      <input type="text" id="bible-verse" placeholder="Enter Bible verse (e.g., Exodus 3:14)" />
+      </div>
+      <div class="bible-info">
+      <input type="text" id="bible-version" placeholder="Enter Version (e.g., KJV)" />
+      </div>
+      <button id="bible-button">Get Verse</button>
+      <div class="output" id="bible-output"></div>
+    </section>
+
+    <section class="grid-item" id="github-api">
+      <h2>🧑‍💻 GitHub User</h2>
+      <div class="info">
+        <input type="text" id="github-username" placeholder="Enter GitHub username" />
+        <button id="github-button">Get User</button>
+      </div>
+      <div class="output" id="github-output"></div>
+    </section>
+
+    <section class="grid-item" id="joke-api">
+      <h2>🤣 Random Joke</h2>
+      <button id="joke-button">Get Joke</button>
+      <div class="output" id="joke-output"></div>
+    </section>
+
+    <section class="grid-item" id="recipe-api">
+      <h2>📚 Recipe Search</h2>
+      <input type="text" id="recipe-input" placeholder="Search for Recipes" />
+      <button id="recipe-button">Search</button>
+      <div class="output" id="recipe-output"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
